@@ -1,4 +1,7 @@
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: true,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -6,7 +9,7 @@ export default {
   head: {
     title: 'my-eduventure-explores',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ja'
     },
     meta: [
       { charset: 'utf-8' },
@@ -43,7 +46,7 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: process.env.BASE_URL
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
