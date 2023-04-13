@@ -20,7 +20,7 @@
 
 .gb-container-714c8a1b:before {
     content: "";
-    background-image: url(https://wbcollective.dev/explore/wp-content/uploads/sites/17/2022/08/waves.svg);
+    background-image: url("@/static/waves.svg");
     background-repeat: no-repeat;
     background-position: top 20px right 20px;
     background-size: 200px;

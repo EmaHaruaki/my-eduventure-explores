@@ -832,7 +832,7 @@ p.gb-headline-3d44d849 {
     border-left-style: solid;
     border-left-width: 20px;
     border-color: var(--base-3);
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/food-mexico.jpg);
+    background-image: url(https://my-eduventure-explores.g.kuroco-img.app/files/user/materials/AdobeStock_196895194-min.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -962,7 +962,7 @@ p.gb-headline-3d44d849 {
 }
 
 .gb-container-f959b86e {
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/beach-brazil.jpg);
+    background-image: url(https://my-eduventure-explores.g.kuroco-img.app/files/user/materials/AdobeStock_196895194-min.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -1033,7 +1033,7 @@ p.gb-headline-3d44d849 {
 }
 
 .gb-container-4bb500ef {
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/destinations-rio.jpg);
+    background-image: url(https://my-eduventure-explores.g.kuroco-img.app/files/user/materials/AdobeStock_196895194-min.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;

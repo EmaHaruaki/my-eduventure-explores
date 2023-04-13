@@ -85,7 +85,7 @@
 				<div class="site-logo">
 					<nuxt-link to="/" rel="home">
 						<img class="header-image is-logo-image" alt="Explore"
-							src="https://gpsites.co/explore/wp-content/uploads/sites/123/2022/11/explore-logo.svg" width="0"
+							src="@/static/explore-logo.svg" width="0"
 							height="0">
 					</nuxt-link>
 				</div>
@@ -160,7 +160,7 @@
 
 									<figure class="gb-block-image gb-block-image-645653c2"><img
 											class="gb-image gb-image-645653c2"
-											src="https://wbcollective.dev/explore/wp-content/uploads/sites/17/2022/08/explore-logo.svg"
+											src="@/static/explore-logo.svg"
 											alt="" title="explore-logo"></figure>
 
 

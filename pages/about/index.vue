@@ -106,9 +106,8 @@
                                                             <figure class="gb-block-image gb-block-image-6513eeca"><img
                                                                     loading="lazy" width="800" height="533"
                                                                     class="gb-image gb-image-6513eeca"
-                                                                    src="https://gpsites.co/explore/wp-content/uploads/sites/123/2022/10/mike-giles-IiwYeihxC58-unsplash.jpg"
+                                                                    src="https://my-eduventure-explores.g.kuroco-img.app/files/user/materials/AdobeStock_269751038.jpeg?with=800&height=553"
                                                                     alt="" title="mike-giles-IiwYeihxC58-unsplash"
-                                                                    srcset="https://gpsites.co/explore/wp-content/uploads/sites/123/2022/10/mike-giles-IiwYeihxC58-unsplash.jpg 800w, https://gpsites.co/explore/wp-content/uploads/sites/123/2022/10/mike-giles-IiwYeihxC58-unsplash-300x200.jpg 300w, https://gpsites.co/explore/wp-content/uploads/sites/123/2022/10/mike-giles-IiwYeihxC58-unsplash-768x512.jpg 768w"
                                                                     sizes="(max-width: 800px) 100vw, 800px"></figure>
 
                                                         </div>

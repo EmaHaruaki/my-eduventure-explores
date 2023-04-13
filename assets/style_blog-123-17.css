@@ -31,7 +31,6 @@
 
 .gb-container-9842a29d:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/09/marvin-meyer-8CDuHXff3zo-unsplash.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -99,7 +98,6 @@
 
 .gb-container-ede4c881:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/beach-maldives-150x150.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -148,7 +146,6 @@
 
 .gb-container-772e9171:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/destinations-rio-150x150.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -197,7 +194,6 @@
 
 .gb-container-4c106eed:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/food-indonesia-150x150.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -246,7 +242,6 @@
 
 .gb-container-5a5ef7a8:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/08/travel-costa-rica-150x150.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -429,7 +424,7 @@
 
 .gb-container-17cea3e7:before {
     content: "";
-    background-image: url(https://gpsites.co/explore/wp-content/uploads/sites/123/2022/11/waves.svg);
+    background-image: url(/static/waves.svg);
     background-repeat: no-repeat;
     background-position: top left 20px;
     background-size: 200px;
