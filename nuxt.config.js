@@ -1,6 +1,6 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
-  ssr: true,
+  ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -9,7 +9,7 @@ export default {
   head: {
     title: 'my-eduventure-explores',
     htmlAttrs: {
-      lang: 'ja'
+      lang: 'en'
     },
     meta: [
       { charset: 'utf-8' },
@@ -24,6 +24,14 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    'assets/main.min.css',
+    'assets/style.min.css',
+    'assets/style2.min.css',
+    'assets/style_blog-123.min.css',
+    'assets/style_blog-123-167.css',
+    'assets/style_blog-123-169.css',
+    'assets/style_blog-123-17.css',
+    'assets/offside.min.css',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
