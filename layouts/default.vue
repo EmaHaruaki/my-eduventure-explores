@@ -197,7 +197,7 @@
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
 											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/scohols/list/" data-type="category"
+												to="/schools/list/" data-type="category"
 												data-id="3">Schools</nuxt-link></span></p>
 
 
@@ -392,7 +392,7 @@
 						</li>
 						<li id="menu-item-1909"
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><nuxt-link
-							to="/schooles/list/">Schools</nuxt-link></li>
+							to="/schools/list/">Schools</nuxt-link></li>
 						<li id="menu-item-1910"
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1910"><nuxt-link
 							to="/blog/category/education/">Ecucation</nuxt-link></li>
