@@ -275,9 +275,9 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
+											</svg></span><span class="gb-headline-text"><!--<nuxt-link
 												to="/contact/" data-type="page"
-												data-id="167">Contact</nuxt-link></span></p>
+												data-id="167">Contact</nuxt-link>--></span></p>
 
 
 
@@ -410,10 +410,10 @@
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><nuxt-link
 								to="/style/">Style Guide</nuxt-link></li>
 						-->
-						<li id="menu-item-1907"
+						<!--<li id="menu-item-1907"
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><nuxt-link
 								to="
-								/contact/">Contact</nuxt-link></li>
+								/contact/">Contact</nuxt-link></li>-->
 					</ul>
 				</div>
 				<div class="gb-button-wrapper gb-button-wrapper-2b4d72bb">
