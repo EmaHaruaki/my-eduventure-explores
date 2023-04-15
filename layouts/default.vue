@@ -85,7 +85,7 @@
 				<div class="site-logo">
 					<nuxt-link to="/" rel="home">
 						<img class="header-image is-logo-image" alt="Explore"
-							src="@/static/explore-logo.svg" width="0"
+							src="https://my-eduventure-explores.g.kuroco-img.app/files/user/parts/facebook_cover_photo_1_adobe_express.svg" width="0"
 							height="0">
 					</nuxt-link>
 				</div>
@@ -160,7 +160,7 @@
 
 									<figure class="gb-block-image gb-block-image-645653c2"><img
 											class="gb-image gb-image-645653c2"
-											src="@/static/explore-logo.svg"
+											src="https://my-eduventure-explores.g.kuroco-img.app/files/user/parts/facebook_cover_photo_1_adobe_express.svg"
 											alt="" title="explore-logo"></figure>
 
 
@@ -362,7 +362,7 @@
 							<div class="gb-container gb-container-b54527b6">
 								<div class="gb-inside-container">
 
-									<p class="gb-headline gb-headline-3d44d849 gb-headline-text">© 2023 Explore Inc.</p>
+									<p class="gb-headline gb-headline-3d44d849 gb-headline-text">© 2023 Edventure Explores.</p>
 
 								</div>
 							</div>
@@ -559,4 +559,11 @@ export default {
 	.menu-bar-item.slideout-toggle {
 		display: none;
 	}
-}</style>
+}
+
+.site-footer .gb-block-image img {
+    vertical-align: middle;
+    width: 200px;
+    height: auto;
+}
+</style>

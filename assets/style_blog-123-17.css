@@ -424,7 +424,7 @@
 
 .gb-container-17cea3e7:before {
     content: "";
-    background-image: url(/static/waves.svg);
+    background-image: url("@/static/waves.svg");
     background-repeat: no-repeat;
     background-position: top left 20px;
     background-size: 200px;
