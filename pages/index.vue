@@ -40,7 +40,7 @@
 
                                 <nuxt-link class="gb-button gb-button-beea65a6"
                                   to="/schools/list/"><span
-                                    class="gb-button-text">Schools</span><span class="gb-icon"><svg viewBox="0 0 40 25.81"
+                                    class="gb-button-text">スクール</span><span class="gb-icon"><svg viewBox="0 0 40 25.81"
                                       xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                       <path
                                         d="M1.55 14.46H34.7l-8.7 8.7a1.55 1.55 0 1 0 2.19 2.19L39.54 14a1.53 1.53 0 0 0 0-2.19L28.19.45A1.55 1.55 0 1 0 26 2.65l8.7 8.7H1.55a1.56 1.56 0 0 0 0 3.11Z">
@@ -59,7 +59,7 @@
 
                                 <nuxt-link class="gb-button gb-button-aca14a74"
                                   to="/blog/category/education/"><span
-                                    class="gb-button-text">Education</span><span class="gb-icon"><svg
+                                    class="gb-button-text">教育</span><span class="gb-icon"><svg
                                       viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                       <path
                                         d="M1.55 14.46H34.7l-8.7 8.7a1.55 1.55 0 1 0 2.19 2.19L39.54 14a1.53 1.53 0 0 0 0-2.19L28.19.45A1.55 1.55 0 1 0 26 2.65l8.7 8.7H1.55a1.56 1.56 0 0 0 0 3.11Z">
@@ -77,7 +77,7 @@
                               <div class="gb-button-wrapper gb-button-wrapper-723b1a08">
 
                                 <nuxt-link class="gb-button gb-button-c1dcddf3"
-                                to="/blog/category/life/"><span class="gb-button-text">Life</span><span class="gb-icon"><svg viewBox="0 0 40 25.81"
+                                to="/blog/category/life/"><span class="gb-button-text">生活</span><span class="gb-icon"><svg viewBox="0 0 40 25.81"
                                       xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                       <path
                                         d="M1.55 14.46H34.7l-8.7 8.7a1.55 1.55 0 1 0 2.19 2.19L39.54 14a1.53 1.53 0 0 0 0-2.19L28.19.45A1.55 1.55 0 1 0 26 2.65l8.7 8.7H1.55a1.56 1.56 0 0 0 0 3.11Z">
@@ -96,7 +96,7 @@
 
                                 <nuxt-link class="gb-button gb-button-6dee48d3"
                                 to="/blog/category/work/"><span
-                                    class="gb-button-text">Work</span><span class="gb-icon"><svg
+                                    class="gb-button-text">仕事</span><span class="gb-icon"><svg
                                       viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                       <path
                                         d="M1.55 14.46H34.7l-8.7 8.7a1.55 1.55 0 1 0 2.19 2.19L39.54 14a1.53 1.53 0 0 0 0-2.19L28.19.45A1.55 1.55 0 1 0 26 2.65l8.7 8.7H1.55a1.56 1.56 0 0 0 0 3.11Z">

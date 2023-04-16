@@ -126,20 +126,20 @@
 							<ul id="menu-main-menu" class=" menu sf-menu">
 								<li id="menu-item-1943"
 									class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item menu-item-1943">
-									<nuxt-link to="/" aria-current="page">Home</nuxt-link>
+									<nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
 								</li>
 								<li id="menu-item-1903"
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1903"><nuxt-link
-										to="/schools/list/">Schools</nuxt-link></li>
+										to="/schools/list/">スクール</nuxt-link></li>
 								<li id="menu-item-1904"
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1904"><nuxt-link
-										to="/blog/category/education/">Education</nuxt-link></li>
+										to="/blog/category/education/">教育</nuxt-link></li>
 								<li id="menu-item-1905"
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1905"><nuxt-link
-									    to="/blog/category/life/">Life</nuxt-link></li>
+									    to="/blog/category/life/">生活</nuxt-link></li>
 								<li id="menu-item-1906"
 									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1906"><nuxt-link
-									    to="/blog/category/work/">Work</nuxt-link></li>
+									    to="/blog/category/work/">仕事</nuxt-link></li>
 							</ul>
 						</div>
 						<div class="menu-bar-items"></div>
@@ -186,7 +186,7 @@
 												</path>
 											</svg></span><span class="gb-headline-text"><nuxt-link
 												to="/" data-type="page"
-												data-id="17">Home</nuxt-link></span></p>
+												data-id="17">HOME</nuxt-link></span></p>
 
 
 
