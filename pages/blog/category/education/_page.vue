@@ -3,7 +3,7 @@
         <div class="gb-container gb-container-64102255">
             <div class="gb-inside-container">
 
-                <h1 class="gb-headline gb-headline-cd476a60 gb-headline-text">Education</h1>
+                <h1 class="gb-headline gb-headline-cd476a60 gb-headline-text">教育</h1>
 
 
                 <div class="gb-container gb-container-f9c8979a">
