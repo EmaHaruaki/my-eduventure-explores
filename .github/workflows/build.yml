@@ -18,15 +18,15 @@ jobs:
       - name: "Get branch name and sha"
         id: get_branch
         run: |
-          PR=$(curl -H "Authorization: token 47c8ee29fbc85fb486bff5fc6517d6d2" https://my-eduventure-explores.g.kuroco.app/direct/menu/github/?pr=${{ github.event.issue.pull_request.url }})
+          PR=$(curl -H "Authorization: token 132f707cc9e3cb0e8e4a8d03d8881d4c" https://my-eduventure-explores.g.kuroco.app/direct/menu/github/?pr=${{ github.event.issue.pull_request.url }})
           echo "branch=$(echo $PR | jq -r '.ref')" >> $GITHUB_OUTPUT
           echo "sha=$(echo $PR | jq -r '.sha')" >> $GITHUB_OUTPUT
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           ref: ${{ steps.get_branch.outputs.branch }}
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - name: Install dependencies
@@ -38,7 +38,7 @@ jobs:
         # - name: Zip artifact for upload
         #  run: cd dist && zip ../dist.zip . -r
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ steps.get_branch.outputs.sha }}-${{ github.run_id }}
           path: dist
@@ -49,8 +49,8 @@ jobs:
         uses: diverta/workflow-webhook@v2
         env:
           webhook_url: "https://my-eduventure-explores.g.kuroco.app/direct/menu/github/"
-          webhook_secret: "47c8ee29fbc85fb486bff5fc6517d6d2"
-          data: '{"single_zip":"0","domain":"my-eduventure-explores.g.kuroco-front.app","pr":"${{ github.event.issue.pull_request.url }}",  "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ steps.get_branch.outputs.sha }}"}'
+          webhook_secret: "132f707cc9e3cb0e8e4a8d03d8881d4c"
+          data: '{"single_zip":"0","domain":"eduventure-explores.net","pr":"${{ github.event.issue.pull_request.url }}",  "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ steps.get_branch.outputs.sha }}"}'
           
   #for Push
   pushed_build:
@@ -59,9 +59,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v3
         with:
           node-version: '16.x'
       - name: Install dependencies
@@ -73,7 +73,7 @@ jobs:
         # - name: Zip artifact for upload
         #  run: cd dist && zip ../dist.zip . -r
       - name: Archive Production Artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: ${{ github.sha }}-${{ github.run_id }}
           path: dist
@@ -82,5 +82,5 @@ jobs:
         uses: diverta/workflow-webhook@v2
         env:
           webhook_url: "https://my-eduventure-explores.g.kuroco.app/direct/menu/github/"
-          webhook_secret: "47c8ee29fbc85fb486bff5fc6517d6d2"
-          data: '{"single_zip":"0","domain":"my-eduventure-explores.g.kuroco-front.app", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
+          webhook_secret: "132f707cc9e3cb0e8e4a8d03d8881d4c"
+          data: '{"single_zip":"0","domain":"eduventure-explores.net", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
