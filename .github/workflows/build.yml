@@ -2,12 +2,12 @@ name: Build and deploy to Kuroco front
 on:
   push:
     branches:
-      - main
+      - dev
   issue_comment:
     types: [created, edited]
   workflow_dispatch:
 env:
-  BASE_URL: ${{secrets.BASE_URL}}
+BASE_URL: ${{secrets.BASE_URL}}
 jobs:
   # for Pull Request (exclude merged)
   pullreq_build:
@@ -50,7 +50,7 @@ jobs:
         env:
           webhook_url: "https://my-eduventure-explores.g.kuroco.app/direct/menu/github/"
           webhook_secret: "132f707cc9e3cb0e8e4a8d03d8881d4c"
-          data: '{"single_zip":"0","domain":"eduventure-explores.net","pr":"${{ github.event.issue.pull_request.url }}",  "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ steps.get_branch.outputs.sha }}"}'
+          data: '{"single_zip":"0","domain":"my-eduventure-explores.g.kuroco-front.app","pr":"${{ github.event.issue.pull_request.url }}",  "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ steps.get_branch.outputs.sha }}"}'
           
   #for Push
   pushed_build:
@@ -83,4 +83,4 @@ jobs:
         env:
           webhook_url: "https://my-eduventure-explores.g.kuroco.app/direct/menu/github/"
           webhook_secret: "132f707cc9e3cb0e8e4a8d03d8881d4c"
-          data: '{"single_zip":"0","domain":"eduventure-explores.net", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
+          data: '{"single_zip":"0","domain":"my-eduventure-explores.g.kuroco-front.app", "repository":"${{ github.repository }}", "run_id":"${{ github.run_id }}", "hash":"${{ github.sha }}"}'
