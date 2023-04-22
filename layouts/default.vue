@@ -523,4 +523,17 @@ export default {
     width: 200px;
     height: auto;
 }
+
+@media (max-width: 767px){
+.contained-content.one-container {
+    z-index: 6;
+    position: relative;
+}
+}
+
+img.header-image.is-logo-image {
+    z-index: 5;
+    position: relative;
+}
+
 </style>
