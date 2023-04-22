@@ -85,8 +85,8 @@
 				<div class="site-logo">
 					<nuxt-link to="/" rel="home">
 						<img class="header-image is-logo-image" alt="Explore"
-							src="https://my-eduventure-explores.g.kuroco-img.app/files/user/parts/facebook_cover_photo_1_adobe_express.svg" width="0"
-							height="0">
+							src="https://my-eduventure-explores.g.kuroco-img.app/files/user/parts/facebook_cover_photo_1_adobe_express.svg"
+							width="0" height="0">
 					</nuxt-link>
 				</div>
 				<nav class="main-navigation mobile-menu-control-wrapper" :class="{ 'toggled': toggle }"
@@ -129,17 +129,17 @@
 									<nuxt-link to="/" aria-current="page">ホーム</nuxt-link>
 								</li>
 								<li id="menu-item-1903"
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1903"><nuxt-link
-										to="/schools/list/">スクール</nuxt-link></li>
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1903">
+									<nuxt-link to="/schools/list/">スクール</nuxt-link></li>
 								<li id="menu-item-1904"
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1904"><nuxt-link
-										to="/blog/category/education/">教育</nuxt-link></li>
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1904">
+									<nuxt-link to="/blog/category/education/">教育</nuxt-link></li>
 								<li id="menu-item-1905"
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1905"><nuxt-link
-									    to="/blog/category/life/">生活</nuxt-link></li>
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1905">
+									<nuxt-link to="/blog/category/life/">生活</nuxt-link></li>
 								<li id="menu-item-1906"
-									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1906"><nuxt-link
-									    to="/blog/category/work/">仕事</nuxt-link></li>
+									class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1906">
+									<nuxt-link to="/blog/category/work/">仕事</nuxt-link></li>
 							</ul>
 						</div>
 						<div class="menu-bar-items"></div>
@@ -184,8 +184,7 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/" data-type="page"
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/" data-type="page"
 												data-id="17">HOME</nuxt-link></span></p>
 
 
@@ -196,9 +195,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/schools/list/" data-type="category"
-												data-id="3">Schools</nuxt-link></span></p>
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/schools/list/"
+												data-type="category" data-id="3">Schools</nuxt-link></span></p>
 
 
 
@@ -209,8 +207,8 @@
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
 											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/blog/category/education/"
-												data-type="category" data-id="4">Education</nuxt-link></span></p>
+												to="/blog/category/education/" data-type="category"
+												data-id="4">Education</nuxt-link></span></p>
 
 
 
@@ -220,9 +218,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/blog/category/life/" data-type="category"
-												data-id="6">Life</nuxt-link></span></p>
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/blog/category/life/"
+												data-type="category" data-id="6">Life</nuxt-link></span></p>
 
 
 
@@ -232,9 +229,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/blog/category/work/" data-type="category"
-												data-id="5">Work</nuxt-link></span></p>
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/blog/category/work/"
+												data-type="category" data-id="5">Work</nuxt-link></span></p>
 
 								</div>
 							</div>
@@ -250,9 +246,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/about/" data-type="page"
-												data-id="169">About</nuxt-link></span></p>
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/about/"
+												data-type="page" data-id="169">About</nuxt-link></span></p>
 
 
 									<!--
@@ -275,9 +270,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link
-												to="/contact/" data-type="page"
-												data-id="167">Contact</nuxt-link></span></p>
+											</svg></span><span class="gb-headline-text"><nuxt-link to="/contact/"
+												data-type="page" data-id="167">Contact</nuxt-link></span></p>
 
 
 
@@ -287,7 +281,8 @@
 												<path fill="currentColor"
 													d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z">
 												</path>
-											</svg></span><span class="gb-headline-text"><nuxt-link to="/privacy_policy">Privacy
+											</svg></span><span class="gb-headline-text"><nuxt-link
+												to="/privacy_policy">Privacy
 												Policy</nuxt-link></span></p>
 
 
@@ -362,7 +357,8 @@
 							<div class="gb-container gb-container-b54527b6">
 								<div class="gb-inside-container">
 
-									<p class="gb-headline gb-headline-3d44d849 gb-headline-text">© 2023 Edventure Explores.</p>
+									<p class="gb-headline gb-headline-3d44d849 gb-headline-text">© 2023 Edventure Explores.
+									</p>
 
 								</div>
 							</div>
@@ -392,16 +388,16 @@
 						</li>
 						<li id="menu-item-1909" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><nuxt-link
-							to="/schools/list/">Schools</nuxt-link></li>
+								to="/schools/list/">Schools</nuxt-link></li>
 						<li id="menu-item-1910" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1910"><nuxt-link
-							to="/blog/category/education/">Ecucation</nuxt-link></li>
+								to="/blog/category/education/">Ecucation</nuxt-link></li>
 						<li id="menu-item-1911" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1911"><nuxt-link
-							to="/blog/category/life/">Life</nuxt-link></li>
+								to="/blog/category/life/">Life</nuxt-link></li>
 						<li id="menu-item-1912" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1912"><nuxt-link
-							to="/blog/category/work/">Work</nuxt-link></li>
+								to="/blog/category/work/">Work</nuxt-link></li>
 						<li id="menu-item-1945" @click='toggle = false'
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><nuxt-link
 								to="/about/">About</nuxt-link></li>
@@ -519,21 +515,25 @@ export default {
 }
 
 .site-footer .gb-block-image img {
-    vertical-align: middle;
-    width: 200px;
-    height: auto;
+	vertical-align: middle;
+	width: 200px;
+	height: auto;
 }
 
-@media (max-width: 767px){
-.contained-content.one-container {
-    z-index: 6;
-    position: relative;
-}
+@media (max-width: 767px) {
+	.contained-content.one-container {
+		z-index: 6;
+		position: relative;
+	}
+
+	.full-width-content.one-container {
+		z-index: 6;
+		position: relative;
+	}
 }
 
 img.header-image.is-logo-image {
-    z-index: 5;
-    position: relative;
+	z-index: 5;
+	position: relative;
 }
-
 </style>
