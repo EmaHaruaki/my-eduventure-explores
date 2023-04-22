@@ -92,7 +92,7 @@
 				<nav class="main-navigation mobile-menu-control-wrapper" :class="{ 'toggled': toggle }"
 					id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
 					<div class="menu-bar-items"></div> <button data-nav="site-navigation" class="menu-toggle"
-						aria-controls="generate-slideout-menu" :aria-expanded="toggle02 ? 'true' : 'false'"
+						aria-controls="generate-slideout-menu" :aria-expanded="toggle ? 'true' : 'false'"
 						@click='toggle = !toggle'>
 						<span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
 								xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
@@ -386,23 +386,23 @@
 					</span> <span class="screen-reader-text">Close</span></button>
 				<div class="main-nav">
 					<ul id="menu-mobile-menu" class=" slideout-menu">
-						<li id="menu-item-1944"
+						<li id="menu-item-1944" @click='toggle = false'
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-17 current_page_item menu-item-1944">
 							<nuxt-link to="/" aria-current="page">Home</nuxt-link>
 						</li>
-						<li id="menu-item-1909"
+						<li id="menu-item-1909" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1909"><nuxt-link
 							to="/schools/list/">Schools</nuxt-link></li>
-						<li id="menu-item-1910"
+						<li id="menu-item-1910" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1910"><nuxt-link
 							to="/blog/category/education/">Ecucation</nuxt-link></li>
-						<li id="menu-item-1911"
+						<li id="menu-item-1911" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1911"><nuxt-link
 							to="/blog/category/life/">Life</nuxt-link></li>
-						<li id="menu-item-1912"
+						<li id="menu-item-1912" @click='toggle = false'
 							class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1912"><nuxt-link
 							to="/blog/category/work/">Work</nuxt-link></li>
-						<li id="menu-item-1945"
+						<li id="menu-item-1945" @click='toggle = false'
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"><nuxt-link
 								to="/about/">About</nuxt-link></li>
 						<!--
@@ -410,9 +410,9 @@
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1908"><nuxt-link
 								to="/style/">Style Guide</nuxt-link></li>
 						-->
-						<li id="menu-item-1907"
+						<li id="menu-item-1907" @click='toggle = false'
 							class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1907"><nuxt-link
-								to="cntact/">Contact</nuxt-link></li>
+								to="/contact/">Contact</nuxt-link></li>
 					</ul>
 				</div>
 				<div class="gb-button-wrapper gb-button-wrapper-2b4d72bb">
@@ -466,51 +466,8 @@
 export default {
 	data() {
 		return {
-			// 座標を指定
-			scrollY: 0,
-			buttonActive: false,
-			top: 0,
-			active01: false,
 			toggle: false,
-			toggle02: false,
-			path_home: "/",
-			path_contact: "/contact",
-			path_blog: "/blog",
-			path_service: "/service",
-			path_aboutus: "/about_us",
-			path_profile: "/profile",
-			response_homeheader: null
 		}
-	},
-	mounted() {
-		window.addEventListener('scroll', this.handleScroll)
-	},
-	methods: {
-		handleScroll() {
-			this.scrollY = window.scrollY
-			if (300 <= this.scrollY) {
-				this.buttonActive = true
-			} else {
-				this.buttonActive = false
-			}
-		},
-		returnTop() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			})
-		},
-		closemenu() {
-			this.active01 = false,
-				this.toggle01 = false,
-				this.toggle02 = false
-		}
-	},
-	async asyncData({ }) {
-		console.log(`---------test_${Date.now()}----------`);
-		return {
-			response_homeheader: await $axios.$get('/rcms-api/3/content/detail/6'),
-		};
 	}
 }
 </script>
