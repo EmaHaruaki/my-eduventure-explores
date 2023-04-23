@@ -520,7 +520,7 @@ export default {
 	height: auto;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 	.contained-content.one-container {
 		z-index: 6;
 		position: relative;
