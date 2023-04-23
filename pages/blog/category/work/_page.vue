@@ -110,8 +110,28 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
+        const response= await $axios.$get('/rcms-api/1/blog/work',{params:{pageID:params.page}})
         return {
-            response: await $axios.$get('/rcms-api/1/blog/work',{params:{pageID:params.page}}),
+            meta: {
+                title: 'カテゴリ - 仕事',
+                description: 'マレーシアの求人市場や就職事情、日本人がマレーシアで働くためのアドバイス、ビジネスマナーなどについて情報を提供します。',
+                type: 'article',
+                url: 'https://eduventure-explores.net/blog/category/work/',
+            },
+            response,
+        };
+    },
+    head() {
+        return {
+            title: this.meta.title,
+            meta: [
+                { hid: 'description', name: 'description', content: this.meta.description },
+                { hid: 'og:type', property: 'og:type', content: this.meta.type },
+                { hid: 'og:title', property: 'og:title', content: this.meta.title },
+                { hid: 'og:description', property: 'og:description', content: this.meta.description },
+                { hid: 'og:url', property: 'og:url', content: this.meta.url },
+                { hid: 'og:image', property: 'og:image', content: this.meta.image },
+            ],
         };
     },
 };

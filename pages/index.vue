@@ -404,6 +404,10 @@
 
 <script>
 export default {
+  head: {
+    titleTemplate: null,
+    title: 'Eduventure Explores'
+  },
 	async asyncData({ $axios }) {
 		return { 
 			response: await $axios.$get('/rcms-api/1/content/list'),

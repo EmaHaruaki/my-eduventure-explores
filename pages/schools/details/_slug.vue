@@ -194,9 +194,31 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
+        const response= await $axios.$get(`/rcms-api/1/schools/details/${params.slug}`)
+        const res_prev_next= await $axios.$get('/rcms-api/1/schools/list', { params: { cnt: 1, central_id: params.slug } })
         return {
-            response: await $axios.$get(`/rcms-api/1/schools/details/${params.slug}`),
-            res_prev_next: await $axios.$get('/rcms-api/1/schools/list', { params: { cnt: 1, central_id: params.slug } }),
+            meta: {
+                title: response.details.subject,
+                description: `マレーシアのインターナショナルスクール${response.details.subject}について、基本的な情報や学費、アクセスの情報を紹介します。`,
+                type: 'article',
+                url: `https://eduventure-explores.net/schools/details/${params.slug}`,
+                image: response.details.ext_1.url,
+            },
+            response,
+            res_prev_next,
+        };
+    },
+    head() {
+        return {
+            title: this.meta.title,
+            meta: [
+                { hid: 'description', name: 'description', content: this.meta.description },
+                { hid: 'og:type', property: 'og:type', content: this.meta.type },
+                { hid: 'og:title', property: 'og:title', content: this.meta.title },
+                { hid: 'og:description', property: 'og:description', content: this.meta.description },
+                { hid: 'og:url', property: 'og:url', content: this.meta.url },
+                { hid: 'og:image', property: 'og:image', content: this.meta.image },
+            ],
         };
     },
 };

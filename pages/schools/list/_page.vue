@@ -46,10 +46,12 @@
                                         <div class="gb-container gb-container-71ff0ae8">
                                             <div class="gb-inside-container">
                                                 <h2 class="gb-headline gb-headline-c113596a gb-headline-text"><nuxt-link
-                                                        :to="`/schools/details/${n.topics_id}`">{{ n.subject }}</nuxt-link></h2>
+                                                        :to="`/schools/details/${n.topics_id}`">{{ n.subject }}</nuxt-link>
+                                                </h2>
                                                 <div class="gb-button-wrapper gb-button-wrapper-5cbe57a5">
                                                     <nuxt-link class="gb-button gb-button-77995f77"
-                                                        :to="`/schools/details/${n.topics_id}`"><span class="gb-button-text">Read
+                                                        :to="`/schools/details/${n.topics_id}`"><span
+                                                            class="gb-button-text">Read
                                                             More</span><span class="gb-icon"><svg viewBox="0 0 40 25.81"
                                                                 xmlns="http://www.w3.org/2000/svg" data-name="Layer 1">
                                                                 <path
@@ -68,8 +70,9 @@
                             <div class="gb-inside-container">
                                 <div class="gb-button-wrapper gb-button-wrapper-4178d196">
 
-                                    <nuxt-link class="gb-button gb-button-ef3a1d58" v-if="response.pageInfo.pageNo != response.pageInfo.startPageNo"
-                                    :to="`/schools/details/${response.pageInfo.pageNo - 1}`"><span class="gb-icon"><svg
+                                    <nuxt-link class="gb-button gb-button-ef3a1d58"
+                                        v-if="response.pageInfo.pageNo != response.pageInfo.startPageNo"
+                                        :to="`/schools/details/${response.pageInfo.pageNo - 1}`"><span class="gb-icon"><svg
                                                 viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg"
                                                 data-name="Layer 1">
                                                 <path
@@ -77,8 +80,9 @@
                                                 </path>
                                             </svg></span><span class="gb-button-text">Back</span></nuxt-link>
 
-                                    <nuxt-link class="gb-button gb-button-ef3a1d58" v-if="response.pageInfo.pageNo != response.pageInfo.endPageNo"
-                                    :to="`/schools/details/${response.pageInfo.pageNo + 1}`"><span
+                                    <nuxt-link class="gb-button gb-button-ef3a1d58"
+                                        v-if="response.pageInfo.pageNo != response.pageInfo.endPageNo"
+                                        :to="`/schools/details/${response.pageInfo.pageNo + 1}`"><span
                                             class="gb-button-text">Next</span><span class="gb-icon"><svg
                                                 viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg"
                                                 data-name="Layer 1">
@@ -102,8 +106,28 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
+        const response = await $axios.$get('/rcms-api/1/schools/list', { params: { pageID: params.page } })
         return {
-            response: await $axios.$get('/rcms-api/1/schools/list',{params:{pageID:params.page}}),
+            meta: {
+                title: 'インターナショナルスクール一覧',
+                description: 'マレーシアにあるインターナショナルスクールの情報や比較、授業料に関する情報を提供します。',
+                type: 'article',
+                url: 'https://eduventure-explores.net/blog/category/education/',
+            },
+            response,
+        };
+    },
+    head() {
+        return {
+            title: this.meta.title,
+            meta: [
+                { hid: 'description', name: 'description', content: this.meta.description },
+                { hid: 'og:type', property: 'og:type', content: this.meta.type },
+                { hid: 'og:title', property: 'og:title', content: this.meta.title },
+                { hid: 'og:description', property: 'og:description', content: this.meta.description },
+                { hid: 'og:url', property: 'og:url', content: this.meta.url },
+                { hid: 'og:image', property: 'og:image', content: this.meta.image },
+            ],
         };
     },
 };

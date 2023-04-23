@@ -7,15 +7,26 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'my-eduventure-explores',
     htmlAttrs: {
       lang: 'en'
     },
+    titleTemplate: '%s|' + 'Eduventure Explores',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { hid: 'description', name: 'description', content: '「マレーシアへの移住・留学をサポートするブログ」というテーマで構成されたサイトです。 現地の情報や生活に必要な知識、留学や就職に関する情報など、様々な情報を提供しています。' },
+      { name: 'format-detection', content: 'telephone=no' },
+
+      { hid: 'og:site_name', property: 'og:site_name', content: 'Eduventure Explores' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://eduventure-explores.net/' },
+      { hid: 'og:title', property: 'og:title', content: 'Eduventure Explores' },
+      { hid: 'og:description', property: 'og:description', content: '「マレーシアへの移住・留学をサポートするブログ」というテーマで構成されたサイトです。 現地の情報や生活に必要な知識、留学や就職に関する情報など、様々な情報を提供しています。'},
+      { hid: 'og:image', property: 'og:image', content: 'サイトURL' },
+
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Eduventure Explores' },
+      { hid: 'twitter:description', name: 'twitter:description', content: '「マレーシアへの移住・留学をサポートするブログ」というテーマで構成されたサイトです。 現地の情報や生活に必要な知識、留学や就職に関する情報など、様々な情報を提供しています。' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

@@ -110,8 +110,28 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
+        const response= await $axios.$get('/rcms-api/1/blog/life',{params:{pageID:params.page}})
         return {
-            response: await $axios.$get('/rcms-api/1/blog/life',{params:{pageID:params.page}}),
+            meta: {
+                title: 'カテゴリ - 生活',
+                description: 'マレーシアでの生活に必要な情報、日常生活や文化・習慣、観光情報、移住や留学に関する手続きなどについて情報を提供します。',
+                type: 'article',
+                url: 'https://eduventure-explores.net/blog/category/life/',
+            },
+            response,
+        };
+    },
+    head() {
+        return {
+            title: this.meta.title,
+            meta: [
+                { hid: 'description', name: 'description', content: this.meta.description },
+                { hid: 'og:type', property: 'og:type', content: this.meta.type },
+                { hid: 'og:title', property: 'og:title', content: this.meta.title },
+                { hid: 'og:description', property: 'og:description', content: this.meta.description },
+                { hid: 'og:url', property: 'og:url', content: this.meta.url },
+                { hid: 'og:image', property: 'og:image', content: this.meta.image },
+            ],
         };
     },
 };

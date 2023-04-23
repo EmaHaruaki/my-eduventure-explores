@@ -32,7 +32,8 @@
                                                 <div class="gb-button-wrapper gb-button-wrapper-135f96db">
                                                     <nuxt-link
                                                         class="gb-button gb-button-db7e6d2e gb-button-text post-term-item post-term-beaches"
-                                                        :to="`/blog/category/${n.contents_type_slug}`">{{ n.contents_type_nm }}</nuxt-link>
+                                                        :to="`/blog/category/${n.contents_type_slug}`">{{ n.contents_type_nm
+                                                        }}</nuxt-link>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,17 +77,19 @@
                             <div class="gb-inside-container">
                                 <div class="gb-button-wrapper gb-button-wrapper-4178d196">
 
-                                    <nuxt-link class="gb-button gb-button-ef3a1d58" v-if="response.pageInfo.pageNo != response.pageInfo.startPageNo"
-                                    :to="`/blog/category/education/${response.pageInfo.pageNo - 1}`"><span class="gb-icon"><svg
-                                                viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg"
+                                    <nuxt-link class="gb-button gb-button-ef3a1d58"
+                                        v-if="response.pageInfo.pageNo != response.pageInfo.startPageNo"
+                                        :to="`/blog/category/education/${response.pageInfo.pageNo - 1}`"><span
+                                            class="gb-icon"><svg viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg"
                                                 data-name="Layer 1">
                                                 <path
                                                     d="M38.45 11.35H5.3l8.7-8.7a1.552 1.552 0 1 0-2.19-2.2L.46 11.81a1.53 1.53 0 0 0 0 2.19l11.35 11.36a1.552 1.552 0 0 0 2.19-2.2l-8.7-8.7h33.15a1.56 1.56 0 0 0 0-3.11Z">
                                                 </path>
                                             </svg></span><span class="gb-button-text">Back</span></nuxt-link>
 
-                                    <nuxt-link class="gb-button gb-button-ef3a1d58" v-if="response.pageInfo.pageNo != response.pageInfo.endPageNo"
-                                    :to="`/blog/category/education/${response.pageInfo.pageNo + 1}`"><span
+                                    <nuxt-link class="gb-button gb-button-ef3a1d58"
+                                        v-if="response.pageInfo.pageNo != response.pageInfo.endPageNo"
+                                        :to="`/blog/category/education/${response.pageInfo.pageNo + 1}`"><span
                                             class="gb-button-text">Next</span><span class="gb-icon"><svg
                                                 viewBox="0 0 40 25.81" xmlns="http://www.w3.org/2000/svg"
                                                 data-name="Layer 1">
@@ -110,8 +113,28 @@
 <script>
 export default {
     async asyncData({ $axios, params }) {
+        const response = await $axios.$get('/rcms-api/1/blog/education', { params: { pageID: params.page } })
         return {
-            response: await $axios.$get('/rcms-api/1/blog/education',{params:{pageID:params.page}}),
+            meta: {
+                title: 'カテゴリ - 教育',
+                description: 'マレーシアの教育制度や教育事情、大学・専門学校の情報、奨学金や留学に関する情報を提供します。',
+                type: 'article',
+                url: 'https://eduventure-explores.net/blog/category/education/',
+            },
+            response,
+        };
+    },
+    head() {
+        return {
+            title: this.meta.title,
+            meta: [
+                { hid: 'description', name: 'description', content: this.meta.description },
+                { hid: 'og:type', property: 'og:type', content: this.meta.type },
+                { hid: 'og:title', property: 'og:title', content: this.meta.title },
+                { hid: 'og:description', property: 'og:description', content: this.meta.description },
+                { hid: 'og:url', property: 'og:url', content: this.meta.url },
+                { hid: 'og:image', property: 'og:image', content: this.meta.image },
+            ],
         };
     },
 };
