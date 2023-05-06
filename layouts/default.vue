@@ -25,7 +25,7 @@
 							</div>
 						</div>
 					</div>
-
+					<!--
 					<div class="gb-grid-column gb-grid-column-bd0f9084">
 						<div class="gb-container gb-container-bd0f9084">
 							<div class="gb-inside-container">
@@ -77,6 +77,7 @@
 							</div>
 						</div>
 					</div>
+				    -->
 				</div>
 			</div>
 		</div>
@@ -300,7 +301,7 @@
 								</div>
 							</div>
 						</div>
-
+						<!--
 						<div class="gb-grid-column gb-grid-column-62df832b">
 							<div class="gb-container gb-container-62df832b">
 								<div class="gb-inside-container">
@@ -352,7 +353,7 @@
 								</div>
 							</div>
 						</div>
-
+						-->
 						<div class="gb-grid-column gb-grid-column-b54527b6">
 							<div class="gb-container gb-container-b54527b6">
 								<div class="gb-inside-container">
@@ -411,6 +412,7 @@
 								to="/contact/">Contact</nuxt-link></li>
 					</ul>
 				</div>
+				<!--
 				<div class="gb-button-wrapper gb-button-wrapper-2b4d72bb">
 
 					<a class="gb-button gb-button-300cfee4" href="#"><span class="gb-icon"><svg viewBox="0 0 16 16"
@@ -452,6 +454,7 @@
 							</svg></span></a>
 
 				</div>
+				-->
 			</div><!-- .inside-navigation -->
 		</nav><!-- #site-navigation -->
 

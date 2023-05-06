@@ -36,7 +36,7 @@
                                                                 必要事項を入力していただき、「送信」ボタンを押してください。返信には数日かかる場合がありますが、できるだけ早急にご返信いたします。
                                                                 よろしくお願いいたします。</p>
 
-
+                                                            <!--
                                                             <div class="gb-headline gb-headline-3fec6813 gb-headline-text">
                                                                 SNSをみる</div>
 
@@ -86,6 +86,7 @@
                                                                         </svg></span></a>
 
                                                             </div>
+                                                             -->
                                                         </div>
                                                     </div>
                                                 </div>
