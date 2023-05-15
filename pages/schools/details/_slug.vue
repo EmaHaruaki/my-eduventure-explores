@@ -55,8 +55,7 @@
                                             </div>
                                         </div>
 
-                                        <p class="gb-headline gb-headline-f8367287 gb-headline-text">{{
-                                            response.details.ext_2 }}</p>
+                                        <!--<p class="gb-headline gb-headline-f8367287 gb-headline-text">{{ response.details.ext_2 }}</p>-->
 
                                         <h3>基本情報</h3>
                                         <table>
